@@ -12,16 +12,16 @@ $ docker run -ti -v $(pwd):/workdir tmaier/hunspell:latest -H "public/**/*.html"
 
 ## Other languages
 
-Many additional directories can be found at `/usr/share/hunspell`.
-
 List all languages available:
 
 ```bash
 docker run -ti tmaier/hunspell -D
 ```
 
+Example:
+
 ```bash
-$ docker run -ti -v $(pwd):/workdir tmaier/hunspell -i utf-8 -d de_DE_neu,en_US -p words -H "public/**/*.html"
+$ docker run -ti -v $(pwd):/workdir tmaier/hunspell -u3 -i utf-8 -d de_DE_neu,en_US -p words -H "public/**/*.html"
 ```
 
 ## Continuous Integration (CI)
