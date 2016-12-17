@@ -7,7 +7,7 @@ See http://hunspell.github.io
 The working directory is at `/workdir`. Mount your volume into that directory.
 
 ```bash
-$ docker run --rm -v $(pwd):/workdir tmaier/hunspell:latest -H "public/**/*.html"
+$ docker run --rm -v $(pwd):/workdir tmaier/hunspell:latest -H public/**/*.html
 ```
 
 ## Other languages
@@ -21,7 +21,7 @@ docker run --rm tmaier/hunspell -D
 Example:
 
 ```bash
-$ docker run --rm -v $(pwd):/workdir tmaier/hunspell -u3 -i utf-8 -d de_DE_neu,en_US -p words -H "public/**/*.html"
+$ docker run --rm -v $(pwd):/workdir tmaier/hunspell -u3 -i utf-8 -d de_DE_neu,en_US -p words -H public/**/*.html
 ```
 
 ## Continuous Integration (CI)
@@ -29,7 +29,7 @@ $ docker run --rm -v $(pwd):/workdir tmaier/hunspell -u3 -i utf-8 -d de_DE_neu,e
 Run in report mode
 
 ```bash
-$ docker run --rm -v $(pwd):/workdir tmaier/hunspell -u3 -H "public/**/*.html"
+$ docker run --rm -v $(pwd):/workdir tmaier/hunspell -u3 -H public/**/*.html
 ```
 
 ## Author
